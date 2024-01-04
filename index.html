@@ -14,15 +14,47 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>HEADING</h1>
-    <button>smash me</button>
-    <p>PARAGRAPH</p>
-    <span>span-1</span>
-    <span>span-2</span>
-    <button></button><button></button><button></button>
-    <a href="http://asndsand">CLick me</a>
+    <fieldset>
+      <legend>Legend template</legend>
+    </fieldset>
+    <br />
+    <br />
+    <fieldset>
+      <legend>INLINE AND BLOCK ELEMENTS</legend>
+      <h1>HEADING</h1>
+      <button>smash me</button>
+      <p>PARAGRAPH</p>
+      <span>span-1</span>
+      <span>span-2</span>
+      <button></button><button></button><button></button>
+      <a href="http://asndsand">CLick me</a>
 
-    <div>DIV-1</div>
-    <div>DIV-2</div>
+      <div>DIV-1</div>
+      <div>DIV-2</div>
+    </fieldset>
+    <br /><br /><br />
+    <fieldset>
+      <legend>TAGS AND ATTRIBUTES</legend>
+      <!-- Void/Empty ELements Elements which donot need closing tag, as they don't have any content  -->
+      <input type="text" />
+      <img src="https://i.pravatar.cc/150" alt="" />
+      <br />
+      <base href="" />
+
+      <!-- GLobal Attributes - class, id, style and title -->
+      <div
+        class="container"
+        id="main"
+        style="color: blue"
+        title="Main Container"
+      >
+        Content goes here
+      </div>
+
+      <!-- Custom attribute -->
+      <h2 id="head" data-value="3" data-color="red">I have a custom attribute on me</h2>
+    </fieldset>
+    <script src="./index.js"></script>
+    
   </body>
 </html>
