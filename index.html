@@ -8,53 +8,58 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <!-- <!DOCTYPE html> -->
-<html lang="en">
-  <head>
-    <title>HTML5 Example</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <fieldset>
-      <legend>Legend template</legend>
-    </fieldset>
+<!-- <html lang="en"> -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <title>
+    HTML5 Example - I am visible in browswer tab, search history, in a list of
+    opened windowsand search results
+  </title>
+  <meta name="viewport" content="width=device-width" />
+  <!-- the above meta tag tells that the content of the document should be fit to the width of the screen of viewing device -->
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <fieldset>
+    <legend>Legend template</legend>
+  </fieldset>
+  <br />
+  <br />
+  <fieldset>
+    <legend>INLINE AND BLOCK ELEMENTS</legend>
+    <h1>HEADING</h1>
+    <button>smash me</button>
+    <p>PARAGRAPH</p>
+    <span>span-1</span>
+    <span>span-2</span>
+    <button></button><button></button><button></button>
+    <a href="http://asndsand">CLick me</a>
+
+    <div>DIV-1</div>
+    <div>DIV-2</div>
+  </fieldset>
+  <br /><br /><br />
+  <fieldset>
+    <legend>TAGS AND ATTRIBUTES</legend>
+    <!-- Void/Empty ELements Elements which donot need closing tag, as they don't have any content  -->
+    <input type="text" />
+    <img src="https://i.pravatar.cc/150" alt="" />
     <br />
-    <br />
-    <fieldset>
-      <legend>INLINE AND BLOCK ELEMENTS</legend>
-      <h1>HEADING</h1>
-      <button>smash me</button>
-      <p>PARAGRAPH</p>
-      <span>span-1</span>
-      <span>span-2</span>
-      <button></button><button></button><button></button>
-      <a href="http://asndsand">CLick me</a>
+    <base href="" />
 
-      <div>DIV-1</div>
-      <div>DIV-2</div>
-    </fieldset>
-    <br /><br /><br />
-    <fieldset>
-      <legend>TAGS AND ATTRIBUTES</legend>
-      <!-- Void/Empty ELements Elements which donot need closing tag, as they don't have any content  -->
-      <input type="text" />
-      <img src="https://i.pravatar.cc/150" alt="" />
-      <br />
-      <base href="" />
+    <!-- GLobal Attributes - class, id, style and title -->
+    <div class="container" id="main" style="color: blue" title="Main Container">
+      Content goes here
+    </div>
 
-      <!-- GLobal Attributes - class, id, style and title -->
-      <div
-        class="container"
-        id="main"
-        style="color: blue"
-        title="Main Container"
-      >
-        Content goes here
-      </div>
+    <!-- Custom attribute -->
+    <h2 id="head" data-value="3" data-color="red">
+      I have a custom attribute on me
+    </h2>
+  </fieldset>
+  <script src="./index.js"></script>
+</body>
+<!-- </html> -->
 
-      <!-- Custom attribute -->
-      <h2 id="head" data-value="3" data-color="red">I have a custom attribute on me</h2>
-    </fieldset>
-    <script src="./index.js"></script>
-    
-  </body>
-</html>
+<!-- Even If we exclude the html tag the browsers are capable enough to parse the document by assuming that there exists an html tag -->
