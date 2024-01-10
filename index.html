@@ -58,7 +58,23 @@
       I have a custom attribute on me
     </h2>
   </fieldset>
-  <script src="./index.js"></script>
+  <!-- Importing an external JS file -->
+  <!-- <script src="./index.js"></script> -->
+
+  <p>...content before scripts...</p>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () =>
+      alert("DOM ready after defer!")
+    );
+  </script>
+
+  <script
+    defer
+    src="https://javascript.info/article/script-async-defer/long.js?speed=1"
+  ></script>
+
+  <p>...content after scripts...</p>
 </body>
 <!-- </html> -->
 
