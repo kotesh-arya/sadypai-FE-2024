@@ -63,18 +63,98 @@
 
   <p>...content before scripts...</p>
 
-  <script>
+  <!-- <script>
     document.addEventListener("DOMContentLoaded", () =>
       alert("DOM ready after defer!")
     );
   </script>
-
+UNCOMMENT THESE TWO SCRIPTS TO SEE DEFERRED SCRIPT EXECUTION IN ACTION
   <script
     defer
     src="https://javascript.info/article/script-async-defer/long.js?speed=1"
-  ></script>
+  ></script> -->
 
   <p>...content after scripts...</p>
+
+  <fieldset>
+    <legend>HTML Tables</legend>
+    <table>
+      <colgroup>
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col style="background-color: red" />
+      </colgroup>
+      <!-- Getting the reference of all the columns formed, by using colgroup with col(which represent a single column) -->
+      <tr>
+        <th style="background-color: yellow" colspan="6">
+          Table header spanning across the whole row with a colspan="n" where n
+          is the number of columns in the table
+        </th>
+      </tr>
+      <tr>
+        <td>
+          I am the smallest container inside a table, td stands for table
+          <strong> ROW IS MY WAY </strong>
+        </td>
+        <td>
+          I am the smallest container inside a table, td stands for table
+          <strong> ROW IS MY WAY </strong>
+        </td>
+        <td>
+          I am the smallest container inside a table, td stands for table
+          <strong> ROW IS MY WAY </strong>
+        </td>
+        <td>
+          I am the smallest container inside a table, td stands for table
+          <strong> ROW IS MY WAY </strong>
+        </td>
+        <td>
+          I am the smallest container inside a table, td stands for table
+          <strong> ROW IS MY WAY </strong>
+        </td>
+        <td>
+          I am the smallest container inside a table, td stands for table
+          <strong> ROW IS MY WAY </strong>
+        </td>
+      </tr>
+      <tr>
+        <th style="background-color: yellow" colspan="6">
+          Table header spanning across the whole row with a colspan="n" where n
+          is the number of columns in the table
+        </th>
+      </tr>
+      <tr>
+        <td>cell-1</td>
+        <td>cell-2</td>
+        <td>cell-3</td>
+        <td>cell-4</td>
+        <td>cell-5</td>
+        <td>cell-6</td>
+      </tr>
+      <tr>
+        <th style="background-color: yellow" colspan="6">
+          Table header spanning across the whole row with a colspan="n" where n
+          is the number of columns in the table
+        </th>
+      </tr>
+      <tr>
+        <td>cell-1</td>
+        <td>cell-2</td>
+        <td>cell-3</td>
+        <td>cell-4</td>
+        <td>cell-5</td>
+      </tr>
+      <tr>
+        <td>cell-1</td>
+        <td>cell-2</td>
+        <td>cell-3</td>
+        <td>cell-4</td>
+      </tr>
+    </table>
+  </fieldset>
 </body>
 <!-- </html> -->
 
