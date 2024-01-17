@@ -220,6 +220,79 @@ UNCOMMENT THESE TWO SCRIPTS TO SEE DEFERRED SCRIPT EXECUTION IN ACTION
       <dd>- cold drink</dd>
     </dl>
   </fieldset>
+  <fieldset>
+    <legend>HTML Form and Input-types</legend>
+    <h2>
+      The form element is a container for different types of input elements,
+      such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+    </h2>
+    <form action="">
+      First Name:<input type="text" />
+      <input type="checkbox" name="" id="" />Fresher
+
+      <div id="radio-inputs">
+        <input type="radio" name="gender" value="male" />Male
+        <input type="radio" name="gender" value="Female" />Female
+        <input type="radio" name="gender" value="other" />Other
+      </div>
+      <button type="submit">SUBMIT</button>
+    </form>
+    <form action="">
+      Inputs with Labels
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" />
+    </form>
+
+    <h2>The &lt;label&gt; Element</h2>
+
+    Notice the use of the &lt;label&gt; element in the example above. The
+    &lt;label&gt; tag defines a label for many form elements. The &lt;label&gt;
+    element is useful for screen-reader users, because the screen-reader will
+    read out loud the label when the user focuses on the input element. The
+    &lt;label&gt; element also helps users who have difficulty clicking on very
+    small regions (such as radio buttons or checkboxes) - because when the user
+    clicks the text within the &lt;label&gt; element, it toggles the radio
+    button/checkbox. The for attribute of the &lt;label&gt; tag should be equal
+    to the id attribute of the &lt;input&gt; element to bind them together.
+    <br />
+    <br />
+    <strong
+      >The Importance of name attribute of an input element in a an HTML
+      form</strong
+    >
+    <br />
+
+    In HTML forms, when you submit the form to a server, the data entered by the
+    user in input fields is sent as part of the HTTP request. The name attribute
+    plays a crucial role in this process. If an input field does not have a name
+    attribute, the data entered in that field will not be included in the
+    submitted form data. Here's an explanation: <br />
+    <br />
+    Form Data Submission: When a user submits a form, the browser collects the
+    data from all the form fields and sends it to the server as a set of
+    key-value pairs. <br />
+    name Attribute as the Key: The name attribute of an input field serves as
+    the key in the key-value pair. The value is the content entered by the user
+    in that specific field. <br />
+    Data Exclusion for Nameless Fields: If an input field does not have a name
+    attribute, it is essentially excluded from the data that gets sent when the
+    form is submitted.
+
+    <fieldset>
+      <legend>Printing the data submitted through a form in the console</legend>
+      <form id="my-form" action="">
+        <label for="fname">FIRST NAME:</label>
+        <input type="text" name="first-name" id="fname" />
+        <label for="lname">LAST NAME:</label>
+        <input type="text" name="last-name" id="lname" />
+
+        <input type="submit" id="form-submit-btn" value="SUBMIT FORM" />
+      </form>
+    </fieldset>
+  </fieldset>
+  <script src="./index.js"></script>
 </body>
 <!-- </html> -->
 
