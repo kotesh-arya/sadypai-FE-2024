@@ -34,3 +34,37 @@ submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   handleFormSubmission();
 });
+// All about events of HTML elements and the Object returned from an event triggering
+const hoveredElement = document.getElementById("hover-element");
+const clickedElement = document.getElementById("click-element");
+const draggableElement = document.getElementById("draggable");
+console.log(draggableElement);
+draggableElement.draggable = true;
+draggableElement.contentEditable = true;
+const pageElement = document;
+console.log(pageElement);
+hoveredElement.addEventListener("mouseover", (event) => {
+  // console.log("hovered me!");
+  console.log(typeof event); //This is an object
+});
+
+clickedElement.addEventListener("click", (e) => {
+  if (e.shiftKey) {
+    console.log("I will respond now, as you clicked me by holding a shift key");
+  }
+});
+
+const parentElement = document.getElementById("parent");
+
+// Using childNodes --> ALl types of nodes including text and comment nodes
+const allNodes = parentElement.childNodes; // NodeList (includes text, span, comment, and p)
+console.log(
+  allNodes,
+  "ChildNodes includes all types of nodes like text nodes and comment nodes also"
+);
+// Using children  ---> HTML - elements
+const onlyElements = parentElement.children; // HTMLCollection (includes only span and p)
+console.log(
+  onlyElements,
+  "HTML collection will include only HTML children of a parent element"
+);
