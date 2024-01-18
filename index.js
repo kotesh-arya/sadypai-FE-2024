@@ -68,3 +68,26 @@ console.log(
   onlyElements,
   "HTML collection will include only HTML children of a parent element"
 );
+
+// Simulating a click event for an element
+const eventSendingButtonElement = document.getElementById(
+  "event-sending-button"
+);
+const checkBox = document.getElementById("tick-box");
+
+function simulateClickEvent(element) {
+  const evt = new MouseEvent("click", {
+    bubbles: true,
+    cancelable: true,
+    view: window,
+  });
+  element.dispatchEvent(evt);
+}
+
+eventSendingButtonElement.addEventListener("click", () => {
+  simulateClickEvent(checkBox);
+});
+
+checkBox.addEventListener("click", (event) => {
+  console.log(event);
+});
