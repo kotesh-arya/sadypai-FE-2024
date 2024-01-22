@@ -1,0 +1,9 @@
+header {
+  background-color: red;
+  height: 300px;
+}
+
+footer {
+  background-color: rgb(0, 255, 85);
+  height: 300px;
+}
