@@ -128,3 +128,136 @@ a[attr~="free"] {
   property: value;
 }
 /* The code above would match an attr attribute with a value of free that contains different kinds of whitespace. */
+
+/* PSEUDO-CLASS Selectors */
+
+/* Selectors that select elements w.r.t specific state */
+
+/* Few states of an anchor element */
+
+/* Hover, visited-link, non-visited link and checked-checkbox etc */
+
+/* :link  -- link have not been visited yet */
+a:link {
+  color: yellow;
+}
+
+/* :visited  -- Link which is already visited */
+a:visited {
+  color: red;
+}
+
+/* :hover - hovering on the element */
+a:hover {
+  font-size: 2rem;
+}
+
+/* :focus  -- clicked once on the element OR switching the focus onto the element using tab key*/
+
+a:focus {
+  font-size: 52px;
+}
+
+/* :active -- element is selected y holding the left mouse button after being clicked */
+
+a:active {
+  color: black;
+}
+
+/* Pseudo class selectors for Input elements */
+
+/* :focus -- when an input element is focused*/
+
+input:focus {
+  color: red;
+  outline: 2px solid rgb(93, 93, 235);
+}
+
+/* :required -- select an input element with a required attribute */
+
+input:required {
+  border: 4px solid red;
+}
+
+/* :checked -- styles applied for a checked checkbox/radio input element */
+
+#checkbox-input-element:checked {
+  outline: 2px solid yellow;
+}
+
+#disabled-button-input-element:disabled {
+  background-color: greenyellow;
+}
+
+/* Pseudo-class selectors for selecting elements based on their position/placement in a container  */
+/* SYNTAX  :  
+element:its-position-integer{
+  property:value
+} 
+*/
+#first-div,
+#second-div,
+#third-div {
+  border: 2px dashed black;
+  margin: 2rem;
+}
+p:first-child {
+  background-color: red;
+}
+p:nth-child(3) {
+  background-color: yellow;
+}
+/* the integer being passed inside this can be an expression that should results and integer */
+p:last-child {
+  background-color: whitesmoke;
+  color: blue;
+}
+
+h3:nth-child(even) {
+  color: brown;
+}
+
+h3:nth-child(odd) {
+  color: rgb(0, 255, 76);
+}
+
+/* :first-of-type  - first element among a group of same type elements in a same container */
+
+section:first-of-type {
+  color: red;
+}
+/* :last-of-type  - last element among a group of same type elements in a same container */
+
+section:last-of-type {
+  color: green;
+  border: 2px dotted purple;
+}
+
+/* Pseudo-element selectors - selecused for styling SPECIFIC PART OF AN ELEMENT  */
+
+/* 2 uses
+1. INSERT content, BEFORE/AFTER the selected element
+2. CHANGE THE LOOK of a selected part of the element
+*/
+
+/* 1. INSERT content, BEFORE/AFTER the selected element */
+#first-article::before {
+  content: "I AM FROM CSS";
+}
+
+#second-article::after {
+  content: "I AM FROM CSS";
+}
+
+/* 2. CHANGE THE LOOK of a selected part of the element
+ */
+#third-article::first-letter {
+  color: red;
+  font-size: 2rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+#fourth-article::first-line {
+  text-decoration: underline;
+  background-color: yellow;
+}
