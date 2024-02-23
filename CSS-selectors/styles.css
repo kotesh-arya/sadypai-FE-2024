@@ -261,3 +261,49 @@ section:last-of-type {
   text-decoration: underline;
   background-color: yellow;
 }
+
+/* 1. INHERITANCE OF FONT-SPECIFIC PROPERTIES FROM PARENTS TO CHILDREN */
+body {
+  color: red;
+  font-size: larger;
+  box-sizing: border-box;
+  /* Setting border box as value maintains constant explicit width defined on elements, even if the padding/border of the elements is increased */
+}
+
+/* 2. CASCADING - Apply last and latest style property from top to bottom*/
+
+#first-article {
+  background-color: pink;
+}
+
+#first-article {
+  background-color: blue;
+  /* Latest/last one -  gets applied during a repeated styling defined to a same element */
+}
+
+#fourth-article {
+  color: aqua;
+  /* lengthy list of 10 properties */
+  /* lengthy list of 10 properties */
+  /* lengthy list of 10 properties */
+  /* lengthy list of 10 properties */
+  color:rgb(0, 255, 76); 
+  /* Latest/last one -  gets applied during a repeated styling defined to a same element */
+}
+
+/* 3.SPECIFICITY - There are 3 main selectors that imply the specificity */
+
+/* 1. Element selectors - LEAST Specificity */
+/* 2. Class selectors - MEDIUM Specificity */
+/* 3. Id selectors -  HIGHEST Specificity */
+
+article {
+  color: yellow;
+}
+.clr-accent {
+  color: chocolate;
+}
+#example {
+  color: aqua;
+}
+
