@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/positions/positions.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">
+        <h2>ABSOLUTE</h2>
+        <ol>
+          <li>
+            will be moved w.r.t the parent container having position property
+            set to some value which is not "static"
+          </li>
+          <li>top/bottom and left/right properties can be used</li>
+          <li>z-index properties can also be used</li>
+        </ol>
+      </div>
+      <div class="item item-2">
+        <h2>STATIC(default)</h2>
+        <ol>
+          <li>Being the default property value:</li>
+          <li>top/bottom and left/right properties CANNOT be used</li>
+          <li>z-index properties CANNOT be used</li>
+        </ol>
+      </div>
+      <div class="item item-3">
+        <h2>RELATIVE</h2>
+        <ol>
+          <li>
+            will be moved w.r.t its initial position on the page and will leave
+            a void that cannot be filled by any peripheral elements
+          </li>
+          <li>top/bottom and left/right properties CAN be used</li>
+          <li>z-index properties CAN be used</li>
+        </ol>
+      </div>
+      <div class="item item-4">
+        <h2>FIXED</h2>
+        <ol>
+          <li>
+            will be moved w.r.t the >&lt;html&gt; leaving a void that WILL BE
+            FILLED BY PERIPHERAL ELEMENTS
+          </li>
+          <li>top/bottom and left/right properties CAN be used</li>
+          <li>z-index properties CAN be used</li>
+        </ol>
+      </div>
+    </div>
+    <div class="item item-5">
+      <h2>STICKY [not a child of the container]</h2>
+      <ol>
+        <li>
+          setting position property value to "sticky" will not show any results.
+        </li>
+        <li>Will start moving only "top" property is being set</li>
+        <li>top/bottom and left/right properties CAN be used</li>
+        <li>z-index properties CAN be used</li>
+      </ol>
+    </div>
+  </body>
+</html>

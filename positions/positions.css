@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 1300px;
+}
+.container {
+  position: relative;
+  /* height: 300px; */
+  top: 90px;
+  left: 400px;
+  width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.item {
+  height: 250px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 5px whitesmoke;
+  flex-direction: column;
+}
+
+.item-1 {
+  margin: 5px;
+  background-color: salmon;
+  position: absolute;
+  top: -80px;
+  right: 620px;
+}
+.item-2 {
+  margin: 5px;
+  background-color: rgb(255, 251, 0);
+}
+.item-3 {
+  margin: 5px;
+  background-color: rgb(226, 175, 169);
+  position: relative;
+  top: 140px;
+  left: 120px;
+}
+.item-4 {
+  margin: 5px;
+  background-color: rgb(151, 39, 255);
+  position: fixed;
+  top: 20px;
+  right: 150px;
+  /* comment above property and see the property in action */
+}
+.item-5 {
+  margin: 5px;
+  background-color: rgb(6, 226, 255);
+  position: sticky;
+  top: 40px;
+}
