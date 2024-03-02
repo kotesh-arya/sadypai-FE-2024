@@ -1,0 +1,50 @@
+h1 {
+  width: 500px;
+  border: 2px solid red;
+}
+
+/* % relative units */
+.container {
+  width: 73%;
+  border: 2px solid green;
+}
+h2 {
+  width: 69%;
+  border: 2px solid green;
+}
+
+/* vw and vh relative units */
+
+.container-two {
+  background-color: green;
+  width: 800vw;
+  height: 50vh;
+}
+.card-two {
+  background-color: pink;
+  width: 30vw;
+  height: 70vh;
+  margin-left: 10px;
+}
+
+/* em relative units */
+
+.container-three {
+  font-size: 10px;
+}
+.card-three {
+  font-size: 2em; /* 2 (10px - parent element fontsize) = 20px */
+  width: 3em; /* 3 (20px - current element fontsize) = 60px */
+}
+
+/* rem relative units - root-element font  size is the value of 1rem */
+html {
+  font-size: 25px;
+}
+.container-three {
+  font-size: 1rem;
+}
+.card-three {
+  font-size: 2rem; /* 1 (25px - root element(html) fontsize) = 25px */
+  width: 3rem; /* 3 (25px - root element(html) fontsize) = 75px */
+}
