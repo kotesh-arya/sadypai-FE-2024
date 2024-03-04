@@ -1,0 +1,33 @@
+.container {
+  border: 2px solid black;
+  overflow: auto;
+}
+
+#img1 {
+  float: right;
+}
+
+.container-two {
+  border: 1px solid black;
+  overflow: auto; /* Clearfix to contain floated elements */
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#box-1 {
+  float: left;
+  margin-right: -50px;
+}
+
+#box-2 {
+  float: left;
+  height: 90px;
+
+  clear: left; /*clear is the sister property of float property*/
+  /* elements on left to this box-2 are cleared and it will be on the extreme left on the edge */
+}
